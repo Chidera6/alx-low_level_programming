@@ -1,29 +1,28 @@
 #include "main.h"
-
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
- * followed by a new line
+ * print_alphabet_x10 - print all alphabet 10 times
  *
- * Return: 0 (Sucess)
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
+
+
 void print_alphabet_x10(void)
 {
-	char ch;
-	int n;
+	char i;
+	int j;
 
-	n = 0;
-
-	while (n < 10)
+	j = 0;
+	while (j < 10)
 	{
-		ch = 'a';
-		while (ch <= 'z')
+		i = 'a';
+		while (i <= 'z')
 		{
-			_putchar(ch);
-			ch++;
+			_putchar(i);
+			i++;
 		}
 		_putchar('\n');
-		n++;
+		j++;
 	}
 
-	return (0);
 }
